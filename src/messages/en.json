@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Home",
+    "cv": "Resume",
+    "portfolio": "Projects",
+    "blog": "Blog"
+  },
+  "home": {
+    "available": "Available for new opportunities",
+    "greeting": "Hi, I'm",
+    "name": "Johnny",
+    "tagline": "IT Engineer with a Master's in Cybersecurity.",
+    "description": "Specialized in system design and development, with experience in frontend, backend, DevOps and computer vision.",
+    "cta_portfolio": "View projects",
+    "cta_cv": "View resume",
+    "stats_experience": "Years of experience",
+    "stats_technologies": "Technologies",
+    "stats_domains": "Domains",
+    "stats_degree": "MSc Cybersecurity",
+    "about_title": "About me",
+    "journey_title": "Journey",
+    "tech_title": "Technologies",
+    "interests_title": "Interests",
+    "interests": {
+      "tech":       { "title": "Emerging technologies", "desc": "Exploration of emerging technologies, tech communities and programming events." },
+      "opensource": { "title": "Open Source",           "desc": "Contributing to open source projects and automation tools." },
+      "homelab":    { "title": "Homelab",                "desc": "Personal server management and experimentation with cloud infrastructure." },
+      "learning":   { "title": "Continuous learning",   "desc": "Technical certifications and specialized courses in development and cybersecurity." }
+    },
+    "description_1": "I'm an IT Engineer passionate about building robust and well-designed systems. With over 5 years of experience, I've worked on scalable APIs, mobile apps, DevOps infrastructure, and AI computer vision solutions.",
+    "description_2": "I'm driven by technological curiosity and the conviction that clean, well-structured code directly impacts product quality. I currently work at Acatha S.A., building electronic invoicing modules and mobile apps with React Native.",
+    "description_3": "Outside of work, I manage personal servers (homelab), contribute to open source projects, and always have something new to learn."
+  },
+  "cv": {
+    "title": "Resume",
+    "download": "Request CV",
+    "experience_title": "Work Experience",
+    "education_title": "Education",
+    "academic_title": "Academic Experience",
+    "skills_title": "Skills & Competencies",
+    "present": "Present"
+  },
+  "portfolio": {
+    "title": "Projects",
+    "subtitle": "A selection of projects where I've applied my knowledge in development, infrastructure and automation. Each one solves a real problem.",
+    "visit": "Visit",
+    "filter_all": "All"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles about technology, software development, DevOps and everything I learn along the way.",
+    "read_more": "Read article",
+    "min_read": "min read",
+    "back": "Back to blog",
+    "empty": "Coming soon. I'll share what I learn here.",
+    "empty_hint": "Articles will appear here automatically when you add .md files"
+  },
+  "footer": {
+    "made_with": "Made with",
+    "by": "by"
+  },
+  "common": {
+    "location": "La Libertad, Santa Elena, Ecuador",
+    "email": "jhonnyalbert245@gmail.com",
+    "phone": "+593 991 303 740"
+  }
+}
