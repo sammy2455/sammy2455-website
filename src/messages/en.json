@@ -56,7 +56,8 @@
     "title": "Projects",
     "subtitle": "A selection of projects where I've applied my knowledge in development, infrastructure and automation. Each one solves a real problem.",
     "visit": "Visit",
-    "filter_all": "All"
+    "filter_all": "All",
+    "read_article": "Read article"
   },
   "blog": {
     "title": "Blog",

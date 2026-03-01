@@ -56,7 +56,8 @@
     "title": "Proyectos",
     "subtitle": "Una selección de proyectos en los que he aplicado mis conocimientos en desarrollo, infraestructura y automatización. Cada uno resuelve un problema real.",
     "visit": "Visitar",
-    "filter_all": "Todos"
+    "filter_all": "Todos",
+    "read_article": "Leer artículo"
   },
   "blog": {
     "title": "Blog",
