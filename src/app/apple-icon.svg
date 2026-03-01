@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- Fondo con esquinas redondeadas estilo iOS -->
+  <rect width="180" height="180" rx="40" fill="#0071e3"/>
+
+  <!-- Chevron ">" escalado -->
+  <path
+    d="M42 62 L78 90 L42 118"
+    stroke="white"
+    stroke-width="15"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Underscore "_" -->
+  <line
+    x1="93" y1="122"
+    x2="140" y2="122"
+    stroke="white"
+    stroke-width="15"
+    stroke-linecap="round"
+  />
+</svg>

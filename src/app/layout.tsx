@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "Johnny Camatón — sammy2455",
   description:
     "Ingeniero en TI con Máster en Ciberseguridad. Frontend, Backend, DevOps y Visión Artificial.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.svg", type: "image/svg+xml" },
+    ],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
