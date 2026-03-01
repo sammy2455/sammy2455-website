@@ -1,10 +1,10 @@
-import { useTranslations, useLocale } from "next-intl"
+import { getTranslations, getLocale } from "next-intl/server"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 
-export default function BlogPage() {
-  const t = useTranslations("blog")
-  const locale = useLocale()
+export default async function BlogPage() {
+  const t = await getTranslations("blog")
+  const locale = await getLocale()
   const posts = getAllPosts(locale)
 
   return (
