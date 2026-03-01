@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+/.idea
 
 # testing
 /coverage
@@ -23,6 +24,7 @@
 # misc
 .DS_Store
 *.pem
+KNOWLEDGE.md
 
 # debug
 npm-debug.log*
