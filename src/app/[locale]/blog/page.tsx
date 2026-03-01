@@ -2,6 +2,8 @@ import { getTranslations, getLocale } from "next-intl/server"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 
+export const dynamic = "force-dynamic"
+
 export default async function BlogPage() {
   const t = await getTranslations("blog")
   const locale = await getLocale()
