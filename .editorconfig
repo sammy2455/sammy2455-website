@@ -1,0 +1,39 @@
+# Editor configuration — http://editorconfig.org
+root = true
+
+# ─── Todos los archivos ───────────────────────────────────
+[*]
+charset                  = utf-8
+end_of_line              = lf
+indent_style             = space
+indent_size              = 2
+tab_width                = 2
+insert_final_newline     = true
+trim_trailing_whitespace = true
+max_line_length          = 100
+
+# ─── TypeScript / JavaScript / JSX / TSX ─────────────────
+[*.{ts,tsx,js,jsx,mjs,cjs,mts,cts}]
+indent_size    = 2
+max_line_length = 100
+
+# ─── Estilos ──────────────────────────────────────────────
+[*.{css,scss,sass}]
+indent_size    = 2
+
+# ─── JSON / configs ───────────────────────────────────────
+[*.{json,jsonc}]
+indent_size    = 2
+
+# ─── Markdown ─────────────────────────────────────────────
+[*.{md,mdx}]
+trim_trailing_whitespace = false
+max_line_length          = off
+
+# ─── YAML ─────────────────────────────────────────────────
+[*.{yml,yaml}]
+indent_size = 2
+
+# ─── Makefile — requiere tabs ─────────────────────────────
+[Makefile]
+indent_style = tab

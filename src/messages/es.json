@@ -22,10 +22,22 @@
     "tech_title": "Tecnologías",
     "interests_title": "Intereses",
     "interests": {
-      "tech":       { "title": "Nuevas tecnologías", "desc": "Exploración de tecnologías emergentes, comunidades tech y eventos de programación." },
-      "opensource": { "title": "Open Source",        "desc": "Contribución a proyectos de código abierto y herramientas de automatización." },
-      "homelab":    { "title": "Homelab",             "desc": "Administración de servidores personales y experimentación con infraestructura en la nube." },
-      "learning":   { "title": "Aprendizaje continuo","desc": "Certificaciones tecnológicas y cursos especializados en desarrollo y ciberseguridad." }
+      "tech": {
+        "title": "Nuevas tecnologías",
+        "desc": "Exploración de tecnologías emergentes, comunidades tech y eventos de programación."
+      },
+      "opensource": {
+        "title": "Open Source",
+        "desc": "Contribución a proyectos de código abierto y herramientas de automatización."
+      },
+      "homelab": {
+        "title": "Homelab",
+        "desc": "Administración de servidores personales y experimentación con infraestructura en la nube."
+      },
+      "learning": {
+        "title": "Aprendizaje continuo",
+        "desc": "Certificaciones tecnológicas y cursos especializados en desarrollo y ciberseguridad."
+      }
     },
     "description_1": "Soy un Ingeniero en TI apasionado por construir sistemas robustos y bien diseñados. Con más de 5 años de experiencia, he trabajado desde APIs escalables y aplicaciones móviles hasta infraestructura DevOps y soluciones de visión artificial con IA.",
     "description_2": "Me mueve la curiosidad tecnológica y la convicción de que el código limpio y bien estructurado impacta directamente en la calidad de los productos. Actualmente trabajo en Acatha S.A., desarrollando módulos para facturación electrónica y apps móviles con React Native.",

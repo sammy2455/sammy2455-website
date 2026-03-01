@@ -1,10 +1,10 @@
 export interface Experience {
-  title: { es: string; en: string };
-  company: string;
-  location: string;
-  dates: { es: string; en: string };
-  logo: string;
-  bullets: { es: string; en: string }[];
+  title: { es: string; en: string }
+  company: string
+  location: string
+  dates: { es: string; en: string }
+  logo: string
+  bullets: { es: string; en: string }[]
 }
 
 export const experiences: Experience[] = [
@@ -130,4 +130,4 @@ export const experiences: Experience[] = [
       },
     ],
   },
-];
+]

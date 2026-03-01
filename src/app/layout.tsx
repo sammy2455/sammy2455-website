@@ -1,17 +1,13 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from "next"
+import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Johnny Camatón — sammy2455",
   description:
     "Ingeniero en TI con Máster en Ciberseguridad. Frontend, Backend, DevOps y Visión Artificial.",
-};
+}
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
@@ -31,5 +27,5 @@ export default function RootLayout({
       </head>
       <body>{children}</body>
     </html>
-  );
+  )
 }

@@ -1,18 +1,19 @@
-import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
-import { getAllPosts } from "@/lib/blog";
+import { useTranslations, useLocale } from "next-intl"
+import Link from "next/link"
+import { getAllPosts } from "@/lib/blog"
 
 export default function BlogPage() {
-  const t      = useTranslations("blog");
-  const locale = useLocale();
-  const posts  = getAllPosts(locale);
+  const t = useTranslations("blog")
+  const locale = useLocale()
+  const posts = getAllPosts(locale)
 
   return (
     <div className="container-main" style={{ paddingTop: "4rem", paddingBottom: "6rem" }}>
-
       <div style={{ textAlign: "center", maxWidth: 560, margin: "0 auto 3.5rem" }}>
         <p className="section-label">{t("title")}</p>
-        <h1 className="section-title" style={{ marginBottom: "0.75rem" }}>{t("title")}</h1>
+        <h1 className="section-title" style={{ marginBottom: "0.75rem" }}>
+          {t("title")}
+        </h1>
         <p style={{ color: "var(--color-text-secondary)", fontSize: "0.9rem", lineHeight: 1.75 }}>
           {t("subtitle")}
         </p>
@@ -29,7 +30,14 @@ export default function BlogPage() {
           }}
         >
           <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>✍️</div>
-          <p style={{ fontWeight: 600, color: "var(--color-text-primary)", marginBottom: "0.5rem", fontSize: "0.95rem" }}>
+          <p
+            style={{
+              fontWeight: 600,
+              color: "var(--color-text-primary)",
+              marginBottom: "0.5rem",
+              fontSize: "0.95rem",
+            }}
+          >
             {t("empty")}
           </p>
           <p style={{ fontSize: "0.8rem", color: "var(--color-text-tertiary)", lineHeight: 1.6 }}>
@@ -44,17 +52,27 @@ export default function BlogPage() {
               textAlign: "left",
             }}
           >
-            <p style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-accent)", marginBottom: "0.4rem", letterSpacing: "0.06em" }}>
+            <p
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 600,
+                color: "var(--color-accent)",
+                marginBottom: "0.4rem",
+                letterSpacing: "0.06em",
+              }}
+            >
               EXAMPLE — content/blog/my-post.md
             </p>
-            <pre style={{
-              fontSize: "0.72rem",
-              lineHeight: 1.6,
-              color: "var(--color-text-secondary)",
-              fontFamily: "var(--font-mono)",
-              margin: 0,
-              whiteSpace: "pre-wrap",
-            }}>{`---\ntitle: "Mi primer artículo"\ndate: "2025-03-01"\ntags: ["DevOps", "Docker"]\ndescription: "Descripción corta"\n---\n\nContenido en Markdown...`}</pre>
+            <pre
+              style={{
+                fontSize: "0.72rem",
+                lineHeight: 1.6,
+                color: "var(--color-text-secondary)",
+                fontFamily: "var(--font-mono)",
+                margin: 0,
+                whiteSpace: "pre-wrap",
+              }}
+            >{`---\ntitle: "Mi primer artículo"\ndate: "2025-03-01"\ntags: ["DevOps", "Docker"]\ndescription: "Descripción corta"\n---\n\nContenido en Markdown...`}</pre>
           </div>
         </div>
       ) : (
@@ -74,22 +92,50 @@ export default function BlogPage() {
                   style={{ overflow: "hidden", display: "flex", flexDirection: "column" }}
                 >
                   {post.cover && (
-                    <div style={{ height: 180, overflow: "hidden", position: "relative", background: "var(--color-surface)" }}>
+                    <div
+                      style={{
+                        height: 180,
+                        overflow: "hidden",
+                        position: "relative",
+                        background: "var(--color-surface)",
+                      }}
+                    >
                       <img
                         src={post.cover}
                         alt={post.title}
-                        style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          transition: "transform 0.5s ease",
+                        }}
                         className="blog-cover-img"
                       />
-                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.25), transparent)" }} />
+                      <div
+                        style={{
+                          position: "absolute",
+                          inset: 0,
+                          background: "linear-gradient(to top, rgba(0,0,0,0.25), transparent)",
+                        }}
+                      />
                     </div>
                   )}
 
-                  <div style={{ padding: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", flex: 1 }}>
+                  <div
+                    style={{
+                      padding: "1.5rem",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "0.5rem",
+                      flex: 1,
+                    }}
+                  >
                     {post.tags.length > 0 && (
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.375rem" }}>
                         {post.tags.slice(0, 3).map((tag) => (
-                          <span key={tag} className="tech-tag">{tag}</span>
+                          <span key={tag} className="tech-tag">
+                            {tag}
+                          </span>
                         ))}
                       </div>
                     )}
@@ -108,41 +154,69 @@ export default function BlogPage() {
                       {post.title}
                     </h2>
 
-                    <p style={{
-                      fontSize: "0.82rem",
-                      lineHeight: 1.65,
-                      color: "var(--color-text-secondary)",
-                      display: "-webkit-box",
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: "vertical",
-                      overflow: "hidden",
-                    }}>
+                    <p
+                      style={{
+                        fontSize: "0.82rem",
+                        lineHeight: 1.65,
+                        color: "var(--color-text-secondary)",
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }}
+                    >
                       {post.description}
                     </p>
 
-                    <div style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      marginTop: "0.5rem",
-                      paddingTop: "0.75rem",
-                      borderTop: "1px solid var(--color-border)",
-                    }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        marginTop: "0.5rem",
+                        paddingTop: "0.75rem",
+                        borderTop: "1px solid var(--color-border)",
+                      }}
+                    >
                       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
                         {post.date && (
-                          <span style={{ fontSize: "0.72rem", color: "var(--color-text-tertiary)" }}>
+                          <span
+                            style={{ fontSize: "0.72rem", color: "var(--color-text-tertiary)" }}
+                          >
                             {new Date(post.date).toLocaleDateString(
                               locale === "es" ? "es-EC" : "en-US",
                               { year: "numeric", month: "short", day: "numeric" }
                             )}
                           </span>
                         )}
-                        <span style={{ fontSize: "0.72rem", color: "var(--color-text-tertiary)" }}>·</span>
-                        <span style={{ fontSize: "0.72rem", color: "var(--color-text-tertiary)" }}>{post.readingTime}</span>
+                        <span style={{ fontSize: "0.72rem", color: "var(--color-text-tertiary)" }}>
+                          ·
+                        </span>
+                        <span style={{ fontSize: "0.72rem", color: "var(--color-text-tertiary)" }}>
+                          {post.readingTime}
+                        </span>
                       </div>
-                      <span style={{ fontSize: "0.78rem", fontWeight: 600, color: "var(--color-accent)", display: "flex", alignItems: "center", gap: "0.25rem" }}>
+                      <span
+                        style={{
+                          fontSize: "0.78rem",
+                          fontWeight: 600,
+                          color: "var(--color-accent)",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.25rem",
+                        }}
+                      >
                         {t("read_more")}
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
                           <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                       </span>
@@ -161,5 +235,5 @@ export default function BlogPage() {
         .blog-card:hover .blog-title { color: var(--color-accent); }
       `}</style>
     </div>
-  );
+  )
 }

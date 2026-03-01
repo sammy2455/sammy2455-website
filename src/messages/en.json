@@ -22,10 +22,22 @@
     "tech_title": "Technologies",
     "interests_title": "Interests",
     "interests": {
-      "tech":       { "title": "Emerging technologies", "desc": "Exploration of emerging technologies, tech communities and programming events." },
-      "opensource": { "title": "Open Source",           "desc": "Contributing to open source projects and automation tools." },
-      "homelab":    { "title": "Homelab",                "desc": "Personal server management and experimentation with cloud infrastructure." },
-      "learning":   { "title": "Continuous learning",   "desc": "Technical certifications and specialized courses in development and cybersecurity." }
+      "tech": {
+        "title": "Emerging technologies",
+        "desc": "Exploration of emerging technologies, tech communities and programming events."
+      },
+      "opensource": {
+        "title": "Open Source",
+        "desc": "Contributing to open source projects and automation tools."
+      },
+      "homelab": {
+        "title": "Homelab",
+        "desc": "Personal server management and experimentation with cloud infrastructure."
+      },
+      "learning": {
+        "title": "Continuous learning",
+        "desc": "Technical certifications and specialized courses in development and cybersecurity."
+      }
     },
     "description_1": "I'm an IT Engineer passionate about building robust and well-designed systems. With over 5 years of experience, I've worked on scalable APIs, mobile apps, DevOps infrastructure, and AI computer vision solutions.",
     "description_2": "I'm driven by technological curiosity and the conviction that clean, well-structured code directly impacts product quality. I currently work at Acatha S.A., building electronic invoicing modules and mobile apps with React Native.",
