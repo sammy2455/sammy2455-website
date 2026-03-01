@@ -1,5 +1,5 @@
 export const siteConfig = {
-  AVAILABLE_FOR_WORK: true,
+  AVAILABLE_FOR_WORK: false,
   name: "Johnny Camatón",
   handle: "sammy2455",
   title: {
