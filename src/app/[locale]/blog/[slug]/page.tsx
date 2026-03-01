@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props) {
   const { slug, locale } = await params
   const post = getPostBySlug(slug, locale)
   if (!post) return {}
+
   return {
     title: `${post.title} — sammy2455`,
     description: post.description,
@@ -94,7 +95,7 @@ const IconShare = () => (
 export default async function BlogPostPage({ params }: Props) {
   const { slug, locale } = await params
   const post = getPostBySlug(slug, locale)
-  const t = await getTranslations("blog")
+  const t = await getTranslations({ locale, namespace: "blog" })
 
   if (!post) notFound()
 

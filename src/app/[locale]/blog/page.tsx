@@ -8,7 +8,7 @@ interface Props {
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params
-  const t = await getTranslations("blog")
+  const t = await getTranslations({ locale, namespace: "blog" })
   const posts = getAllPosts(locale)
 
   return (
