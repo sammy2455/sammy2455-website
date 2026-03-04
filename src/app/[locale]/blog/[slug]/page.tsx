@@ -4,6 +4,8 @@ import { MDXRemote } from "next-mdx-remote/rsc"
 import { getPostBySlug, getAllPosts } from "@/lib/blog"
 import { getTranslations } from "next-intl/server"
 import { ReadingProgress } from "@/components/ui/ReadingProgress"
+import { mdxComponents } from "@/components/ui/MdxComponents"
+import remarkGfm from "remark-gfm"
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>
@@ -383,7 +385,11 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           <div className="prose-apple">
-            <MDXRemote source={post.content} />
+            <MDXRemote
+              source={post.content}
+              components={mdxComponents}
+              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+            />
           </div>
 
           <div
